@@ -12,8 +12,8 @@ body{
     background-color: #e3f2fd;
 }
 .wrapper{
-    width: 65vmin;
-    height: 70vmin;
+    width: 80vmin;
+    height: 80vmin;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -36,6 +36,15 @@ body{
 }
 .play-board .food{
     background-color: #ff003d;
+    animation: blink 700ms ease-in-out infinite;
+}
+@keyframes blink {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
 }
 .play-board .head{
     background-color: #60cbff;
@@ -57,5 +66,23 @@ body{
 @media (max-width: 992px) {
     .controls{
         display: flex;
+    }
+}
+@media (max-width: 912px) {
+    .wrapper{
+        width: 80vmin;
+        min-height: 80vmin;
+    }
+}
+@media (max-width: 500px) {
+    .wrapper{
+        width: 90%;
+        height: 80vh;
+    }
+}
+@media (max-width: 350px) {
+    .wrapper{
+        width: 95%;
+        height: 70vh;
     }
 }
