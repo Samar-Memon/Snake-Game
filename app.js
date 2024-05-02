@@ -5,7 +5,7 @@ const controls = document.querySelectorAll('.controls i');
 
 let gameOver = false;
 let foodX, foodY;
-let snakeX = 5, snakeY = 10;
+let snakeX = 28, snakeY = 5;
 let snakeBody = [];
 let velocityX = 0, velocityY = 0;
 let setInterValid,
