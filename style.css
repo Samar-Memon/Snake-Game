@@ -76,12 +76,7 @@ body{
 }
 @media (max-width: 500px) {
     .wrapper{
-        width: 90%;
-        height: 70vh;
-    }
-}
-@media (max-width: 350px) {
-    .wrapper{
         width: 95%;
+        height: 70vh;
     }
 }
